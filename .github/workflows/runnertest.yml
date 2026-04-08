@@ -4,8 +4,8 @@ on: push
 
 jobs:
   test:
-    runs-on: self-hosted
+    runs-on: [self-hosted, Linux]
 
     steps:
-      - name: Print message
-        run: echo "Hello from EC2"
+      - name: Test
+        run: echo "Runner working 🚀"
